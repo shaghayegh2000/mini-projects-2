@@ -30,15 +30,19 @@
   justify-content: center;
   align-items: center;
   z-index: 30;
-  /* transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
-  -o-transition: all 0.5s; */
+  -o-transition: all 0.5s;
+}
+
+.change .hamburger-menu {
+  background-color: #eef0eb;
 }
 
 .line {
-  width: 1.7rem;
+  width: 2rem;
   height: .15rem;
   background-color: #eee;
   margin: .17rem 0;
@@ -51,8 +55,12 @@
 }
 
 .change .line-1 {
-  transform: rotate(-40deg) translateY(-5px);
   background-color: #67b67b;
+  transform: rotate(-40deg) translate(-.1rem , -.3rem) ;
+  -webkit-transform: rotate(-40deg) translate(-.1rem , -.3rem) ;
+  -moz-transform: rotate(-40deg) translate(-.1rem , -.3rem) ;
+  -ms-transform: rotate(-40deg) translate(-.1rem , -.3rem) ;
+  -o-transform: rotate(-40deg) translate(-.1rem , -.3rem) ;
 }
 
 .change .line-2 {
@@ -60,8 +68,12 @@
 }
 
 .change .line-3 {
-  transform: rotate(40deg) translateY(5px);
   background-color: #67b67b;
+  transform: rotate(40deg) translate(0 , .2rem);
+  -webkit-transform: rotate(40deg) translate(0 , .2rem);
+  -moz-transform: rotate(40deg) translate(0 , .2rem);
+  -ms-transform: rotate(40deg) translate(0 , .2rem);
+  -o-transform: rotate(40deg) translate(0 , .2rem);
 }
 
 .bg-cover {
@@ -72,11 +84,15 @@
   top: 1.75rem;
   right: 1.75rem;
   border-radius: 50%;
-  /* transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -ms-transition: transform 0.5s;
-  -o-transition: transform 0.5s; */
+  transition: transform 2s;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -ms-transition: transform 2s;
+  -o-transition: transform 2s;
+}
+
+.change .bg-cover {
+  transform: scale(150);
 }
 
 .nav-list {
@@ -88,8 +104,35 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  z-index: 200;
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s;
+}
+
+.change .nav-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-item {
+  margin: .5rem 0;
+}
+
+.nav-link {
+  font-family: "Dancing Script", cursive;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: letter-spacing 0.3s .2s;
+  -webkit-transition: letter-spacing 0.3s .2s;
+  -moz-transition: letter-spacing 0.3s .2s;
+  -ms-transition: letter-spacing 0.3s .2s;
+  -o-transition: letter-spacing 0.3s .2s;
+}
+
+.nav-link:hover {
+  letter-spacing: 0.8rem;
 }
