@@ -20,4 +20,50 @@ html {
   --active-icon-color: #2ae7e7;
 }
 
+.sidebar {
+  padding: 1.5rem 1rem;
+  width: 15vw;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  position: fixed;
+  /* position: fixed;
+  left: -15vw;
+  z-index: 100;
+  transition: left 0.2s;
+  -webkit-transition: left 0.2s;
+  -moz-transition: left 0.2s;
+  -ms-transition: left 0.2s;
+  -o-transition: left 0.2s; */
+}
 
+.main-section {
+  position: relative;
+  left: 18vw;
+  width: 85vw;
+  /* transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s; */
+}
+
+.header {
+  width: inherit;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(images/bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  position: absolute;
+  letter-spacing: 1rem;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12rem;
+  color: #fff;
+}

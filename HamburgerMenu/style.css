@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(images/bg.jpg) fixed center no-repeat;
+  background-size: cover;
+}
+
+.hamburger-menu {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #67b67b;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  /* transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s; */
+}
+
+.line {
+  width: 1.7rem;
+  height: .15rem;
+  background-color: #eee;
+  margin: .17rem 0;
+  transform-origin: right;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.change .line-1 {
+  transform: rotate(-40deg) translateY(-5px);
+  background-color: #67b67b;
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotate(40deg) translateY(5px);
+  background-color: #67b67b;
+}
+
+.bg-cover {
+  background-color: rgba(103, 182, 123, 0.9);
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 1.75rem;
+  right: 1.75rem;
+  border-radius: 50%;
+  /* transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s; */
+}
+
+.nav-list {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}
